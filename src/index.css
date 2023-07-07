@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container{
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: 1fr;
+  /* position: relative; */
+}
+
+.todocont{
+  overflow-y: auto;
+  max-height: 210px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width:1024px){
+  .container{
+    display: grid;
+    gap: 0.9rem;
+    grid-template-columns: repeat(4,1fr);
+    /* position: relative; */
+    
+  }
+  .elements{
+    /* height: auto; */
+    /* max-height: 00px; */
+    min-height: 333px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px){
+  .container{
+    display: grid;
+    gap: 0.9rem;
+    grid-template-columns: repeat(2,1fr);
+    /* position: relative; */
+  }
+  .elements{
+    /* height: auto; */
+    /* max-height: 00px; */
+    min-height: 333px;
+  }
+}
+@media screen and (max-width:767px){
+  .elements{
+    width: 320px;
+    min-height: 333px;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+   
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+  }
+  }
+
+
+.nav-item{
+  margin-right: 1rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+  
+  
+}
+
+::-webkit-scrollbar{
+  width: 0.3rem;
+  margin-left: 1rem;
+
+}
+::-webkit-scrollbar-thumb{
+  background-color:#9FA6B2;
+  border-radius: 100vw;
+
+}
+::-webkit-scrollbar-track{
+  background-color: #202C39;
+
+}
+#Textarea1{
+  overflow: hidden;
+}
+
+#floatingInput:focus{
+  outline: none;
+  
+}
+
+.navlogo{
+  height:3rem;
+}
+
+.elements:first-child{
+  background-color: #424C55;
+}
+
+
+.navbar{
+  background-color: #283845;
+}
+.topper{
+  margin-top: 6rem;
+  font-weight: bolder;
+  font-size: 3rem;
+  color: #424C55;
+}
